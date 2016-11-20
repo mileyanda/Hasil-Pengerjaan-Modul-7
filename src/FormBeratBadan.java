@@ -30,6 +30,7 @@ public class FormBeratBadan extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -51,142 +52,86 @@ public class FormBeratBadan extends javax.swing.JFrame {
         h2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+
+        jPanel1.setLayout(null);
 
         jLabel1.setText("Cek Ideal Tubuh");
-        getContentPane().add(jLabel1);
+        jPanel1.add(jLabel1);
         jLabel1.setBounds(160, 10, 120, 14);
 
         jLabel2.setText("Nama");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(20, 30, 60, 14);
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(20, 30, 90, 30);
 
         jLabel3.setText("Tinggi");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 70, 60, 14);
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(20, 70, 90, 30);
 
         jLabel4.setText("Berat Badan");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 110, 80, 14);
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(20, 110, 90, 30);
 
         jLabel5.setText("Jenis Kelamin");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(20, 150, 80, 14);
-        getContentPane().add(n);
-        n.setBounds(100, 30, 240, 20);
-        getContentPane().add(t);
-        t.setBounds(100, 70, 240, 20);
-
-        b.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bActionPerformed(evt);
-            }
-        });
-        getContentPane().add(b);
-        b.setBounds(100, 110, 240, 20);
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(20, 154, 80, 30);
+        jPanel1.add(n);
+        n.setBounds(120, 30, 310, 30);
+        jPanel1.add(t);
+        t.setBounds(120, 70, 310, 30);
+        jPanel1.add(b);
+        b.setBounds(120, 110, 310, 30);
 
         l.setText("Laki - Laki");
-        getContentPane().add(l);
-        l.setBounds(100, 150, 71, 23);
+        jPanel1.add(l);
+        l.setBounds(110, 150, 130, 40);
 
         w.setText("Perempuan");
-        getContentPane().add(w);
-        w.setBounds(250, 150, 79, 23);
+        jPanel1.add(w);
+        w.setBounds(250, 150, 120, 40);
 
         hitung.setText("Hitung");
-        hitung.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hitungActionPerformed(evt);
-            }
-        });
-        getContentPane().add(hitung);
-        hitung.setBounds(10, 190, 80, 23);
+        jPanel1.add(hitung);
+        hitung.setBounds(10, 200, 90, 30);
 
         exit.setText("Keluar");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
-        getContentPane().add(exit);
-        exit.setBounds(270, 190, 70, 23);
+        jPanel1.add(exit);
+        exit.setBounds(340, 200, 80, 30);
 
         cobalagi.setText("Coba Lagi");
-        cobalagi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cobalagiActionPerformed(evt);
-            }
-        });
-        getContentPane().add(cobalagi);
-        cobalagi.setBounds(140, 190, 80, 23);
+        jPanel1.add(cobalagi);
+        cobalagi.setBounds(180, 200, 90, 30);
 
         jLabel6.setText("Berat Badan Ideal Anda Adalah");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(20, 250, 170, 30);
-        getContentPane().add(hbi);
-        hbi.setBounds(180, 250, 90, 30);
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(20, 250, 200, 30);
+        jPanel1.add(hbi);
+        hbi.setBounds(220, 250, 110, 30);
 
         jLabel7.setText("kg");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(280, 250, 40, 30);
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(350, 250, 40, 30);
 
         jLabel8.setText("Hasil Diagnosa Kesehatan");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(80, 290, 140, 14);
-        getContentPane().add(h1);
-        h1.setBounds(10, 310, 330, 30);
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(150, 300, 270, 30);
+        jPanel1.add(h1);
+        h1.setBounds(10, 330, 410, 30);
+        jPanel1.add(h2);
+        h2.setBounds(10, 380, 410, 30);
 
-        h2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                h2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(h2);
-        h2.setBounds(10, 350, 330, 30);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 448, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bActionPerformed
-
-    private void h2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_h2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_h2ActionPerformed
-
-    private void hitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hitungActionPerformed
-        if(b.getText().equals("")||t.getText().equals("")||n.getText().equals("")){
-            JOptionPane.showMessageDialog(null, "Kotak isian Belum diisi, maka harus diisi");
-        }else if (w.isSelected()||l.isSelected())
-            try{
-                Proses();
-            }
-        catch(Exception e) {
-           JOptionPane.showMessageDialog(null, "Inputan ada yang salah");
-        }
-        else {
-            JOptionPane.showMessageDialog(null, "Jenis Kelamin silahkan diisi");
-        }
-        
-        
-        
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hitungActionPerformed
-
-    private void cobalagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cobalagiActionPerformed
-        n.setText("");
-        t.setText("");
-        b.setText("");
-        buttonGroup1.clearSelection();
-        hbi.setText("");
-        h1.setText("");
-        h2.setText("");        // TODO add your handling code here:
-    }//GEN-LAST:event_cobalagiActionPerformed
-
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_exitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,6 +185,7 @@ dispose();        // TODO add your handling code here:
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton l;
     private javax.swing.JTextField n;
     private javax.swing.JTextField t;
